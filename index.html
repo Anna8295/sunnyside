@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8acabe373d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <title>Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <a href=""><img src="../images/logo.svg" alt="logo"></a>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><img src="../images/icon-hamburger.svg" alt="icon-hamburger"></label>
+    <div class="menu">
+      <ul class="list">
+        <li><a href="#about" id="about-page">About</a></li>
+        <li><a href="#service" id="service-page">Services</a></li>
+        <li><a href="#project" id="project-page">Projects</a></li>
+        <li><a href="#client" id="client-page">Clients</a></li>
+        <li><button class="nav-btn" id="btn-c">Contact us</button></li>
+
+        <div id="contactUs" class="contact">
+          <span class="close">&times;</span>
+          <div class="container-form">
+            <form id="form" class="form">
+              <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Name" id="name" />
+              </div>
+
+              <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" id="email" />
+              </div>
+
+              <div class="form-control">
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Message" rows="10" cols="30">
+                </textarea>
+              </div>
+
+              <button class="btn-send">Send</button>
+
+            </form>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>We are creatives</h1>
+      <img class="arrow" src="../images/icon-arrow-down.svg" alt="arrow">
+    </div>
+  </header>
+
+  <section class="cards-services" id="about">
+    <div class="cards-services-text">
+      <h2>Transform your brand</h2>
+      <p> We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <button class="btn-transform" id="btn-t"> Learn more</button>
+    </div>
+    <div class="img">
+      <img src="../images/desktop/image-transform.jpg" alt="egg">
+    </div>
+
+    <div id="learnMore1" class="learn1">
+      <span class="close1">&times;</span>
+      <div class="cards-services-text">
+        <h2>Transform your brand</h2>
+        <p> We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      </div>
+      <div class="img">
+        <img src="../images/desktop/image-transform.jpg" alt="egg">
+      </div>
+    </div>
+
+    <div>
+      <img src="../images/desktop/image-stand-out.jpg" alt="glass">
+    </div>
+    <div class="cards-services-text">
+      <h2>Stand out to the right audience</h2>
+      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build
+        and extend your brand in digital places.</p>
+      <button class="btn-standout" id="btn-s">Learn more</button>
+    </div>
+
+    <div id="learnMore2" class="learn2">
+      <span class="close2">&times;</span>
+      <div class="cards-services-text">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build
+          and extend your brand in digital places.</p>
+      </div>
+      <div>
+        <img src="../images/desktop/image-stand-out.jpg" alt="glass">
+      </div>
+    </div>
+  </section>
+
+  <section class="text-over-img" id="service">
+    <div class="text-over-item">
+      <img src="../images/desktop/image-graphic-design.jpg" alt="">
+      <div class="text1">
+        <h3> Graphic design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential
+          clients’ attention.</p>
+      </div>
+    </div>
+    <div class="text-over-item">
+      <img src="../images/desktop/image-photography.jpg" alt="">
+      <div class="text2">
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-client" id="client">
+    <div class="card1">
+      <h3>Client testimonials</h3>
+    </div>
+    <div class="card">
+      <img src="../images/image-emily.jpg" alt="person-emily">
+      <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+        hit.</p>
+      <h5> Emily R.</h5>
+      <span>Marketing Director</span>
+    </div>
+    <div class="card">
+      <img src="../images/image-thomas.jpg" alt="person-thomas">
+      <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+        enjoyable
+        experience.</p>
+      <h5>Thomas S.</h5>
+      <span> Chief Operating Officer</span>
+    </div>
+    <div class="card">
+      <img src="../images/image-jennie.jpg" alt="person-jenny">
+      <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <h5>Jennie F.</h5>
+      <span>Business Owner</span>
+    </div>
+  </section>
+
+  <section id="project">
+    <div class="gallery">
+      <img src="../images/desktop/image-gallery-milkbottles.jpg" alt="milkbottle">
+      <img src="../images/desktop/image-gallery-orange.jpg" alt="orange">
+      <img src="../images/desktop/image-gallery-cone.jpg" alt="cone">
+      <img src="../images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="">
+        <h2>sunnyside</h2>
+      </a>
+      <ul>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="#service">
+          <li> Services</li>
+        </a>
+        <a href="#project">
+          <li>Projects</li>
+        </a>
+      </ul>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook-square fa-l"></i></a>
+        <a href=""><i class="fa-brands fa-twitter-square fa-l"></i></a>
+        <a href=""><i class="fa-brands fa-instagram-square fa-l"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest-square fa-l"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

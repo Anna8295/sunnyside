@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+li,
+ul {
+    display: inline;
+    padding: 0px 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.navbar {
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 400;
+    background-color: hsl(200, 97%, 70%);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 95%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-size: large;
+    padding: 10px 35px;
+    margin: 0px 20px;
+}
+
+.nav-btn:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.contact {
+    justify-content: center;
+    padding-top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container-form {
+    background-color: white;
+    width: fit-content;
+    margin-top: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.form-control input, textarea {
+    border: 2px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    font-family: inherit;
+    width: -webkit-fill-available;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: hsl(248, 32%, 49%);
+}
+
+.btn-send {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+}
+
+.btn-send:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-style: bold;
+    text-align: center;
+    margin-top: 75px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.arrow {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cards-services-text {
+    margin: 75px;
+}
+
+.cards-services-text>h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+}
+
+.cards-services-text>p {
+    font-family: 'Barlow', sans-serif;
+    font-size: small;
+    color: hsl(210, 4%, 67%);
+    line-height: 1.8;
+}
+
+.cards-services-text>button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    padding: 25px 0px;
+}
+
+.btn-transform:hover {
+    text-decoration: underline solid hsl(51, 100%, 49%) 5px;
+}
+
+.btn-standout:hover {
+    text-decoration: underline solid hsl(7, 99%, 70%) 5px;
+}
+
+/* The Modal (background) */
+.learn1,
+.learn2,
+.contact {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.learn1 {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.learn2 {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.learn1 p,
+.learn2 p {
+    color: hsl(212, 27%, 19%);
+}
+
+/* The Close Button */
+.close1,
+.close2,
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus,
+.close2:hover,
+.close2:focus,
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-over-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+}
+
+.text-over-item {
+    position: relative;
+}
+
+.text1,
+.text2 {
+    position: absolute;
+    bottom: 55px;
+    margin: 50px 50px 0px 50px;
+}
+
+.text1 {
+    color: hsl(167, 40%, 24%);
+    left: 16px;
+}
+
+.text2 {
+    color: hsl(198, 62%, 26%);
+    right: 16px;
+}
+
+.text1>p,
+.text2>p {
+    padding-top: 15px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 400;
+}
+
+.cards-client {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px 30px;
+    margin: 155px;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: hsl(210, 4%, 67%);
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card>img {
+    border-radius: 50%;
+    width: 35%;
+}
+
+.card>p {
+    padding: 25px 0px;
+    font-family: 'Barlow', sans-serif;
+    color: hsl(212, 27%, 19%);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.card>h5 {
+    font-size: large;
+    color: hsl(212, 27%, 19%);
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.card>span {
+    font-family: 'Barlow', sans-serif;
+    font-size: small;
+    color: hsl(210, 4%, 67%);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: hsl(168, 34%, 41%);
+    color: hsl(167, 40%, 24%);
+    padding: 15px 0px;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+footer>div>div {
+    margin: 35px 0px 20px 0px;
+}
+
+footer>div>div>a {
+    padding: 0px 8px;
+}
+
+footer>div>div>a:hover {
+    color: white;
+}
+
+footer>div>ul>a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        color: hsl(210, 4%, 67%);
+        background-color: white;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .nav-btn {
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .cards-services {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    .img {
+        grid-row: 1;
+    }
+
+    .text-over-img,
+    .cards-client {
+        display: block;
+    }
+
+    .card>img {
+        padding: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: 50% 50%;
+    }
+}
